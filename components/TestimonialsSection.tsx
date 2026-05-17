@@ -23,7 +23,7 @@ const stagger = {
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeOut" } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeOut" as const } },
 };
 
 export default function TestimonialsSection() {
@@ -34,7 +34,7 @@ export default function TestimonialsSection() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.9, ease: "easeOut" }}
+          transition={{ duration: 0.9, ease: "easeOut" as const }}
           className="font-lato text-[10px] tracking-[0.3em] uppercase text-[#C9A96E] text-center mb-14"
         >
           GUEST VOICES

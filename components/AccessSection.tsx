@@ -9,7 +9,7 @@ const stagger = {
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeOut" } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeOut" as const } },
 };
 
 const accessInfo = [

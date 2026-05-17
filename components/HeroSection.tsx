@@ -9,7 +9,7 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeOut" } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeOut" as const } },
 };
 
 export default function HeroSection() {
@@ -53,7 +53,7 @@ export default function HeroSection() {
       <motion.div
         className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#C9A96E]"
         animate={{ y: [0, 8, 0] }}
-        transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
+        transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" as const }}
       >
         <ChevronDown size={24} />
       </motion.div>

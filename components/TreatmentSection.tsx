@@ -44,7 +44,7 @@ export default function TreatmentSection() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.9, ease: "easeOut" }}
+          transition={{ duration: 0.9, ease: "easeOut" as const }}
           className="text-center mb-16 flex flex-col items-center gap-4"
         >
           <p className="font-lato text-[10px] tracking-[0.3em] uppercase text-[#C9A96E]">
@@ -62,7 +62,7 @@ export default function TreatmentSection() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.9, ease: "easeOut", delay: i * 0.15 }}
+              transition={{ duration: 0.9, ease: "easeOut" as const, delay: i * 0.15 }}
               className="group border-b border-[#C9A96E]/40"
               style={{ backgroundColor: "#0D0A08" }}
             >

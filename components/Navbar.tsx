@@ -24,7 +24,7 @@ export default function Navbar() {
       animate={{
         backgroundColor: scrolled ? "rgba(13,10,8,0.95)" : "rgba(0,0,0,0)",
       }}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
+      transition={{ duration: 0.4, ease: "easeInOut" as const }}
     >
       <a
         href="#"
